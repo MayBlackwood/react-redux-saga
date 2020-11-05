@@ -1,5 +1,8 @@
 import React from 'react';
 import PostForm from './components/PostForm';
+import Posts from './components/Posts';
+import Post from './components/Post';
+import FetchedPosts from './components/FetchedPosts';
 
 function App() {
   return (
@@ -10,8 +13,8 @@ function App() {
         </div>
       </div>
       <div className="row">
-        <div className="col">POSTS</div>
-        <div className="col">FETCHED POSTS  </div>
+        <div className="col"><Posts posts={[{title: 1, id: 1}, {title: 2, id: 2}]}/></div>
+        <div className="col"><FetchedPosts posts={[{title: 1, id: 1}, {title: 2, id: 2}]} /></div>
       </div>
     </div>
   );
