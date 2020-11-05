@@ -13,7 +13,7 @@ function App() {
         </div>
       </div>
       <div className="row">
-        <div className="col"><Posts posts={[{title: 1, id: 1}, {title: 2, id: 2}]}/></div>
+        <div className="col"><Posts /></div>
         <div className="col"><FetchedPosts posts={[{title: 1, id: 1}, {title: 2, id: 2}]} /></div>
       </div>
     </div>
