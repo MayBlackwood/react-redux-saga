@@ -12,7 +12,10 @@ class PostForm extends Component {
 
     handleSubmitClick = (e) => {
         e.preventDefault();
-        this.props.createPost({title: this.state.title, id: Date.now()});
+        if (this.state.title !== "") {
+            this.props.createPost({title: this.state.title, id: Date.now()});
+            this.setState({title: ""});
+        }
     }
 
     handleInputChange = (e) => {
